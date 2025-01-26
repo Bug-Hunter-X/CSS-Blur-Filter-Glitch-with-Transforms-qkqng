@@ -1,0 +1,1 @@
+The CSS property `filter: blur()` is applied to an element that also has a `transform` property, resulting in unexpected visual glitches or rendering issues in some browsers.  This is because the blur operation may not correctly interact with the transformed element's bounding box, leading to artifacts or incorrect blurring around the element's edges. 
