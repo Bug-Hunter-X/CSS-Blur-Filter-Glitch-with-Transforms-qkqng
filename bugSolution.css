@@ -1,0 +1,17 @@
+/* bugSolution.css */
+.element {
+  /* Apply transform without affecting the blur */
+  transform: translate(100px, 50px);
+}
+
+.blurred-element {
+  /* Create a separate element for blurring and position it appropriately */
+  filter: blur(5px);
+  position: absolute;
+  /* Match the transformed element's position and size */
+  top: 50px;
+  left: 100px;
+  width: 100px;
+  height: 100px;
+  pointer-events: none; /* Prevent it from interfering with the original element's interactions */
+} 
